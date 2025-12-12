@@ -1,0 +1,29 @@
+### Comprobar que la API está corriendo
+GET http://localhost:8000/
+
+### Subir documento
+POST http://localhost:8000/documents
+Content-Type: multipart/form-data; boundary=MymeBoundary
+
+--MymeBoundary
+Content-Disposition: form-data; name="title"
+
+CV de Leo Valeriano
+--MymeBoundary
+Content-Disposition: form-data; name="tags"
+
+fullstack, development, ai
+--MymeBoundary
+Content-Disposition: form-data; name="file"; filename="CV_FullStack.pdf"
+Content-Type: application/pdf
+
+< ./CV_FullStack.pdf
+--MymeBoundary--
+
+### Consulta RAG
+POST http://localhost:8000/query
+Content-Type: application/json
+
+{
+  "query": "Cuantos años de experiencia tiene Leo Valeriano?"
+}

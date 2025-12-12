@@ -1,0 +1,9 @@
+2025-12-11 23:43:26.332 | INFO     | app.routers.query:query_endpoint:17 - Query: ¿Quién es Leo Valeriano?
+2025-12-11 23:51:48.017 | INFO     | app.routers.query:query_endpoint:17 - Query: ¿Quién es Leo Valeriano?
+2025-12-11 23:54:32.643 | INFO     | app.routers.query:query_endpoint:17 - Query: ¿Quién es Leo Valeriano?
+2025-12-11 23:54:36.487 | INFO     | app.routers.query:query_endpoint:17 - Query: ¿Quién es Leo Valeriano?
+2025-12-11 23:59:06.240 | INFO     | app.services.document_service:process_document:12 - 3 chunks generados para el documento CV_FullStack.pdf
+2025-12-11 23:59:07.449 | INFO     | app.services.document_service:process_document:16 - Documento CV_FullStack.pdf agregado a Vector DB
+2025-12-11 23:59:07.450 | INFO     | app.routers.documents:upload_document:41 - Documento CV_FullStack.pdf procesado correctamente
+2025-12-11 23:59:18.648 | INFO     | app.routers.query:query_endpoint:17 - Query: ¿Quién es Leo Valeriano?
+2025-12-12 00:00:06.459 | INFO     | app.routers.query:query_endpoint:17 - Query: Cuantos años de experiencia tiene Leo Valeriano?

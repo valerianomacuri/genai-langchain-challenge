@@ -1,0 +1,16 @@
+networks:
+  app_network:
+    driver: bridge
+
+services:
+  chroma:
+    image: chromadb/chroma
+    volumes:
+      - chroma_data:/data
+    ports:
+      - "8001:8000"
+    networks:
+      - app_network
+
+volumes:
+  chroma_data:
