@@ -1,13 +1,13 @@
 # Knowledge Assistant (FastAPI + LangChain + RAG + ChromaDB + Prompt Engineering)
 
-**Knowledge Assistant** es una **REST API** para búsqueda inteligente y respuesta a preguntas sobre documentos. Construida con **FastAPI**, **LangChain**, **RAG**, y **ChromaDB**, aprovecha **OpenAI LLMs** con **prompt engineering** para entregar respuestas precisas y contextuales.
+**Knowledge Assistant** is a **REST API** for intelligent document search and question-answering. Built with **FastAPI**, **LangChain**, **RAG**, and **ChromaDB**, it leverages **OpenAI LLMs** with **prompt engineering** to provide accurate, context-aware responses.
 
 ---
 
-## 🚀 Requisitos
+## 🚀 Requirements
 
 * Python 3.11+
-* uv instalado
+* `uv` installed
 
 ```bash
 pip install uv
@@ -15,7 +15,7 @@ pip install uv
 
 ---
 
-## 📥 Clonar el repositorio
+## 📥 Clone the repository
 
 ```bash
 git clone https://github.com/valerianomacuri/knowledge-assistant.git
@@ -24,28 +24,28 @@ cd knowledge-assistant
 
 ---
 
-## 📦 Instalar dependencias
+## 📦 Install dependencies
 
 ```bash
 uv sync
 ```
 
-> Esto instala todas las dependencias desde `pyproject.toml` y crea el entorno virtual automáticamente.
+> This installs all dependencies from `pyproject.toml` and automatically creates a virtual environment.
 
 ---
 
-## ▶️ Ejecutar en desarrollo
+## ▶️ Run in development
 
 ```bash
 uv run uvicorn app.main:app --reload
 ```
 
 * API: `http://localhost:8000`
-* Documentación interactiva: `http://localhost:8000/docs`
+* Interactive docs: `http://localhost:8000/docs`
 
 ---
 
-## 🚀 Ejecutar en producción
+## 🚀 Run in production
 
 ```bash
 uv run gunicorn app.main:app \
@@ -56,7 +56,7 @@ uv run gunicorn app.main:app \
 
 ---
 
-## 🎨 Formatear código con Black
+## 🎨 Format code with Black
 
 ```bash
 uv run black .
@@ -64,7 +64,7 @@ uv run black .
 
 ---
 
-## 🗂️ Estructura del proyecto
+## 🗂️ Project structure
 
 ```
 knowledge-assistant/
@@ -80,20 +80,20 @@ knowledge-assistant/
 
 ---
 
-## ✅ Stack tecnológico
+## ✅ Technology Stack
 
-* **FastAPI** → Framework API rápido y moderno
-* **LangChain** → Gestión de chains y RAG
-* **OpenAI** → LLMs para generación de respuestas
-* **ChromaDB** → Vector database para embeddings
-* **Prompt Engineering** → Optimización de prompts para respuestas más precisas
-* **uv** → Gestor de dependencias
-* **Uvicorn** → Servidor ASGI para desarrollo
-* **Gunicorn** → Servidor WSGI para producción
-* **Black** → Formateo automático de código
+* **FastAPI** → Modern and fast API framework
+* **LangChain** → Chains and RAG management
+* **OpenAI** → LLMs for response generation
+* **ChromaDB** → Vector database for embeddings
+* **Prompt Engineering** → Optimized prompts for more accurate answers
+* **uv** → Dependency manager
+* **Uvicorn** → ASGI server for development
+* **Gunicorn** → WSGI server for production
+* **Black** → Automatic code formatting
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
 MIT
