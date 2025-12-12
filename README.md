@@ -1,25 +1,25 @@
-# FastAPI Scaffolding (uv + uvicorn + gunicorn + black)
+# Knowledge Assistant (FastAPI + LangChain + RAG + ChromaDB + Prompt Engineering)
 
-Scaffolding mínimo y listo para producción para construir APIs con **FastAPI**, usando **uv** como gestor de dependencias, **Uvicorn** para desarrollo, **Gunicorn** para producción y **Black** para formateo de código.
+**Knowledge Assistant** es una **REST API** para búsqueda inteligente y respuesta a preguntas sobre documentos. Construida con **FastAPI**, **LangChain**, **RAG**, y **ChromaDB**, aprovecha **OpenAI LLMs** con **prompt engineering** para entregar respuestas precisas y contextuales.
 
 ---
 
 ## 🚀 Requisitos
 
-- Python 3.11+
-- uv instalado
+* Python 3.11+
+* uv instalado
 
 ```bash
 pip install uv
-````
+```
 
 ---
 
 ## 📥 Clonar el repositorio
 
 ```bash
-git clone https://github.com/valerianomacuri/fastapi-scaffolding.git
-cd fastapi-scaffolding
+git clone https://github.com/valerianomacuri/knowledge-assistant.git
+cd knowledge-assistant
 ```
 
 ---
@@ -41,7 +41,7 @@ uv run uvicorn app.main:app --reload
 ```
 
 * API: `http://localhost:8000`
-* Documentación: `http://localhost:8000/docs`
+* Documentación interactiva: `http://localhost:8000/docs`
 
 ---
 
@@ -67,9 +67,13 @@ uv run black .
 ## 🗂️ Estructura del proyecto
 
 ```
-.
+knowledge-assistant/
 ├── app/
-│   └── main.py
+│   ├── main.py
+│   ├── routers/
+│   ├── services/
+│   └── utils/
+├── tests/
 ├── pyproject.toml
 └── .venv/
 ```
@@ -78,11 +82,15 @@ uv run black .
 
 ## ✅ Stack tecnológico
 
-* FastAPI → Framework API
-* uv → Gestor de dependencias
-* Uvicorn → Servidor ASGI para desarrollo
-* Gunicorn → Servidor WSGI para producción
-* Black → Formateo automático de código
+* **FastAPI** → Framework API rápido y moderno
+* **LangChain** → Gestión de chains y RAG
+* **OpenAI** → LLMs para generación de respuestas
+* **ChromaDB** → Vector database para embeddings
+* **Prompt Engineering** → Optimización de prompts para respuestas más precisas
+* **uv** → Gestor de dependencias
+* **Uvicorn** → Servidor ASGI para desarrollo
+* **Gunicorn** → Servidor WSGI para producción
+* **Black** → Formateo automático de código
 
 ---
 
