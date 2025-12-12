@@ -25,5 +25,5 @@ POST http://localhost:8000/query
 Content-Type: application/json
 
 {
-  "query": "Cuantos años de experiencia tiene Leo Valeriano?"
+  "query": "¿Cual es el linkedin de Leo?"
 }

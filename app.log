@@ -7,3 +7,8 @@
 2025-12-11 23:59:07.450 | INFO     | app.routers.documents:upload_document:41 - Documento CV_FullStack.pdf procesado correctamente
 2025-12-11 23:59:18.648 | INFO     | app.routers.query:query_endpoint:17 - Query: ¿Quién es Leo Valeriano?
 2025-12-12 00:00:06.459 | INFO     | app.routers.query:query_endpoint:17 - Query: Cuantos años de experiencia tiene Leo Valeriano?
+2025-12-12 02:19:16.798 | INFO     | app.routers.query:query_endpoint:17 - Query: Dame el stack completo de Leo Valeriano
+2025-12-12 02:47:58.261 | INFO     | app.routers.query:query_endpoint:17 - Query: ¿De que nacionalidad es Leo?
+2025-12-12 02:52:38.693 | INFO     | app.routers.query:query_endpoint:17 - Query: ¿A que posiciones recomiendas aplicar a Leo?
+2025-12-12 03:13:18.320 | INFO     | app.routers.query:query_endpoint:17 - Query: Respondeme en una sola palabra. ¿Donde tuvo un trabajo más complejo Leo?
+2025-12-12 03:20:25.511 | INFO     | app.routers.query:query_endpoint:17 - Query: ¿Cual es el linkedin de Leo?

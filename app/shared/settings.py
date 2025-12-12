@@ -5,13 +5,12 @@ class Settings(BaseSettings):
     openai_api_key: str
     openai_llm_model: str
     openai_embedding_model: str
-    database_url: str
     chroma_host: str
     chroma_port: str
 
     class Config:
         env_file = ".env"
-        extra = "allow"
+        extra = "ignore"
 
 
 settings = Settings()  # pyright: ignore[reportCallIssue]

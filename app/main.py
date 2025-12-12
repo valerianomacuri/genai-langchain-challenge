@@ -1,6 +1,10 @@
+from dotenv import load_dotenv
 from fastapi import FastAPI
 
 from app.routers import documents, query
+
+load_dotenv()
+
 
 app = FastAPI(title="Knowledge Assistant API")
 
